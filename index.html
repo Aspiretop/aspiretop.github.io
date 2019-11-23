@@ -1,0 +1,259 @@
+<!---
+界面相应的图标及界面比例在font和css这两个文件夹下，通过css配置的
+--->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>lijie</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal-default-theme.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.min.js"></script>
+    <script src="static/js/script.js"></script>
+</head>
+
+<body>
+    <div class="container" id="cv">     <!整个页面>
+        <div class="side">              <!页面左半部分>
+            <div class="me">            <!页面左上角我的介绍部分>
+                <div class="portrait">   
+                  <!---
+                  <img class="me" src="http://p6hlch5jf.bkt.clouddn.com/deer.jpg"width="160"height="160"> 
+                  --->
+                  <!---
+                  <img class="me" src="http://p6hlch5jf.bkt.clouddn.com/white.jpg"width="160"height="160"; style="position:absolute; left:100px; top:20px; "> 
+                  --->
+                  <img class="me" src="1.png"width="160"height="160"; style="position:absolute; left:100px; top:20px; "> 
+                  
+                </div>      <!头像部分>
+                <div class="remodal remodal-img" data-remodal-id="portrait-modal">
+                    <h3>1.png</h3>
+                    <br/>
+                    <input type="text" id="1.png">
+                    <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
+                </div>
+                <h1 id="username" >Lijie</h1>                                            <!名字部分>
+                <h4 id="persona-tag" >Computer Vision / Embedded development</h4>        <!名字下面的介绍>
+            </div>
+            <div class="profile info-unit">             <!左边第一部分>
+                <h2 class="info-header"><i class="iconfont icon-person"></i> <span class="info-title">基本信息</span></h2>
+                <hr>
+                <ul class="info-list">          
+                    <li>
+                        <label class="left-label">姓名</label><span class="label-value">李杰</span></li>
+                    <li>
+                        <label class="left-label">学历</label><span class="label-value">本科</span></li>
+                    <li>
+                        <label class="left-label">毕业院校</label><span class="label-value">XDU</span></li>
+                    <li>
+                        <label class="left-label">毕业年份</label><span class="label-value">2021</span></li>
+                </ul>
+            </div>
+            <div class="contact info-unit">       <!左边第二部分>
+                <h2 class="info-header"><i class="iconfont icon-call"></i> <span class="info-title">联系方式</span></h2>
+                <hr>
+                <ul class="info-list">
+                    <li>
+                        <label class="left-label">手机</label><span class="label-value">18220895830</span></li>
+                        
+                    <li>
+                        <label class="left-label">邮箱</label><span class="label-value">642746796@qq.com</span></li>
+                       
+                       <!--- <a href="http://aspire082.lofter.com"><!添加网址>我的LOFTER</a>--->
+
+                       <!---
+                    <li>
+                        <label class="left-label">个人主页</label><span class="label-value">https://ljgithub669.github.io</span></li>
+                         --->
+
+                    <li>
+                        <label class="left-label">个人主页</label><span class="label-value">https://ljgithub669.github.io</span></li>
+
+                    <li>
+                        <label class="left-label">Github</label><span class="label-value">https://github.com/ljgithub669</span></li>
+                </ul>
+            </div>
+            <div class="skill info-unit">             <!左边第三部分>
+                <h2 class="info-header"><i class="iconfont icon-star"></i> <span class="info-title">技能点</span></h2>
+                <hr>
+                <ul class="progress-list">
+                    <li>
+                        <label class="left-label">Python</label>
+                        <progress value="30" max="100"></progress>
+                    </li>
+                    <li>
+                        <label class="left-label">C/C++</label>
+                        <progress value="35" max="100"></progress>
+                    </li>
+                    <li>
+                        <label class="left-label">Linux</label>
+                        <progress value="30" max="100"></progress>
+                    </li>
+                    <li>
+                        <label class="left-label">ML/DL</label>
+                        <progress value="10" max="100"></progress>
+                    </li>
+                </ul>
+            </div>
+            <div class="stack info-unit">               <!左边第四部分>
+                <h2 class="info-header"><i class="iconfont icon-build"></i> <span class="info-title">技术栈</span></h2>
+                <hr>
+                <ul class="stack-list">
+                    <li>
+                        <label class="left-label">language</label><span class="label-value">Python C/C++</span></li>
+                    </li>
+                     <li>
+                        <label class="left-label">前端</label><span class="label-value">HTML</span></li>
+                    </li>
+                    <li>
+                        <label class="left-label">后端</label><span class="label-value">Linux</span></li>
+                    </li>
+                    <li>
+                        <label class="left-label">其它</label><span class="label-value">ML/DL</span></li>
+                    </li>
+                </ul>
+            </div>
+  
+            <div class="code info-unit">                  <!左边第五部分>
+                <h2 class="info-header"><i class="iconfont icon-weixin"></i> <span class="info-title">个人微信</span></h2>
+                <hr>
+                <div class="weixin">
+                    <img src="wei.png" alt="">
+
+                </div>
+            </div>
+            <div class="remodal remodal-img" data-remodal-id="weixin-modal">
+                <h3>请输入图片URL地址：</h3>
+                <br/>
+                <input type="text" id="weixin-url">
+                <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
+            </div>
+        </div>                     <!左边结束>
+        <div class="main">         <!右半部分>   
+            <div class="education info-unit right-list">            <!右边第一部分>
+                <h2 class="info-header"><i class="iconfont icon-education"></i> <span class="info-title">教育经历</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3>西安电子科技大学 - 电子工程学院（本科）2017-2021</h3>
+                        <p>
+                           
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="work info-unit right-list">           <!右边第二部分>
+                <h2 class="info-header"><i class="iconfont icon-work"></i> <span class="info-title">工作与实践经历</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3>西电中兴物联创新俱乐部秘书部部长（2018.5）</h3>
+                        <p>
+                            于2017年9月进入西电中兴物联俱乐部，担任秘书部部长，在秘书部负责会议记录、活动经费申请、财务报销、俱乐部文案整理。
+                        </p>
+                     </li>
+
+                     <li>
+                       <h3>校一等奖学金（2019.9）</h3>
+ 						<p>
+                            于2019年9月获得校一等奖学金，班级排名第四，获得校级优秀学生称号。
+                        </p>
+                     </li>
+
+                        <!---
+                    
+                    <li>
+                        <h3>无</h3>
+                        <p>
+                            稍后补充
+                        </p>
+                    <li>
+                        <h3>暂无（实习）</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </li>
+                    --->
+                </ul class="experience-list">
+            </div>
+            <div class="project info-unit right-list">           <!右边第三部分>
+    <h2 class="info-header"><i class="iconfont icon-project"></i> <span class="info-title">个人项目</span></h2>
+    <hr>
+    <ul class="experience-list">
+        <li>
+        <h3>智能交通车辆监控</h3>
+        <p>
+        2017年11参加的大学生创新创业大赛，截止日期是2019年6月，周期比较长，项目相对完整。内容是做一个PC端软件，实现车辆违章自动抓拍、统计车流量等功能。本人担任队长，在项目中负责基于端到端的车牌识别，摄像头和雷达的硬件调试等任务，起到把控项目方向，督促项目进度等作用。 
+        </p>
+    </li>
+        <li>
+        <h3>复制移动粘贴伪造检测</h3>
+        <p>
+            2018年11月参加大学生创新创业大赛，项目内容是：通过深度学习，训练出一个检测图片是否伪造的模型，进而通过软件检测输入图片是否伪造。图片伪造类型为：把一张图片中某些区域ps到另一张图片上，人眼不能分辨。本人负责深度学习算法构建以及模型的训练。
+        </p>
+    </li>
+           </li>
+        <li>
+        <h3>室内WiFi定位</h3>
+        <p>
+            2018年8月,在实验室跟老师做项目，项目内容是：通过Android端APP获取室内不同WiFi的强度，使用相应衰减公式计算物理距离，最后通过几何关系确定二维坐标。本人负责Android端APP开发，获取周围所有WiFi信息，取得WiFi信号强度，通过文本保存，供队友使用。
+        </p>
+    </li>
+
+        <li>
+        <h3>（人脸识别）校园证件丢失自动联系失主系统</h3>
+        <p>
+            2018年12月,参加校星火杯，使用dlib的人脸特征提取器，即深度残差神经网络，实现人脸识别功能，并通过数据库信息检索，获取证件主人信息，然后以邮件或短信的形式，自动通知失主招领地点和时间，项目优势在于可以同时处理大批证件，简单高效。
+        </p>
+    	</li>
+
+    </ul>
+    </div>
+    <div class="trophy info-unit">                         <!右边第四部分>
+    <h2 class="info-header"><i class="iconfont icon-trophy"></i> <span class="info-title">奖项与证书</span></h2>
+    <hr>
+    <ul class="experience-list">
+        <li>
+        <h3>星火杯二等奖</h3>
+        <p>
+            2017年12月，第29届星火杯，入学参加的第一个比赛，作品是调频调幅收音机。
+        </p>
+        </li> 
+
+        <li>
+        <h3>星火杯特等奖</h3>
+        <p>
+            2018年12月，第30届星火杯，校园证件丢失自动联系失主系统，通过人脸识别，获取证件上主人信息，在数据库中查找联系方式，自动给失主发送招领信息。本人负责人脸识别算法开发、整体系统设计。
+        </p>
+        </li> 
+        
+        <li>
+        <h3>挑战杯校三等奖</h3>
+        <p>
+            2019年5月，第16届挑战杯，校园证件丢失自动联系失主系统，通过人脸识别，获取证件上主人信息，在数据库中查找联系方式，自动给失主发送招领信息。本人负责人脸识别算法开发、整体系统设计。
+        </p>
+        </li> 
+
+		<li>
+         <h3>大学生创新创业大赛省级优秀（排名第四）</h3>
+        <p>
+            2019年6.15结题，智能交通车辆监控，通过雷达和摄像头统计车流量信息，当车辆超速、逆行时，对违章车辆进行抓拍并识别车牌等信息，存档作为后期处罚依据。
+        </p>
+        </li> 
+
+ 		<li>
+         <h3>计算机设计大赛国家级二等奖</h3>
+        <p>
+            2019年7月，第12届计算机设计大赛，智能证件招领平台，通过文字识别识别，获取证件上主人信息，在数据库中查找联系方式，自动给失主发送招领信息。本人负责邮件发送及框架设计。
+        </p>
+        </li> 
+
+
+
+        </div>
+    </div>
+</body>
+
+</html>
